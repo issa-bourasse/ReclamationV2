@@ -1,0 +1,72 @@
+.setting-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.setting-form {
+  width: 100%;
+  max-width: 768px; /* max-w-screen-md */
+}
+
+.setting-form img {
+  width: 144px; /* w-24 */
+  height: 144px; /* h-24 */
+  border-radius: 50%; /* rounded-full */
+  margin-right: 16px; /* mr-4 */
+  transition: opacity 0.3s; /* hover:opacity-75 transition-opacity */
+}
+
+.setting-form img:hover {
+  opacity: 0.75;
+}
+
+.setting-form label {
+  cursor: pointer;
+  color: #3b82f6; /* text-blue-500 */
+}
+
+.setting-form label:hover {
+  text-decoration: underline; /* hover:underline */
+}
+
+.setting-form input[type="file"] {
+  display: none; /* hidden */
+}
+
+.setting-form h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 600; /* font-semibold */
+  margin-bottom: 16px; /* mb-4 */
+  color: #4b5563; /* text-gray-800 */
+}
+
+.setting-form input[type="text"],
+.setting-form input[type="email"],
+.setting-form input[type="password"] {
+  width: 100%;
+  padding: 8px; /* p-2 */
+  border: 1px solid #e2e8f0; /* border */
+  outline: none; /* focus:outline-none */
+  transition: border-color 0.2s; /* focus:border-blue-500 */
+}
+
+.setting-form input[type="text"]:focus,
+.setting-form input[type="email"]:focus,
+.setting-form input[type="password"]:focus {
+  border-color: #3b82f6; /* focus:border-blue-500 */
+}
+
+.setting-form button {
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: #fff; /* text-white */
+  padding: 8px 16px; /* py-2 px-4 */
+  border: none;
+  border-radius: 4px; /* rounded */
+  transition: background-color 0.2s, color 0.2s; /* transition-colors */
+}
+
+.setting-form button:hover {
+  background-color: #2563eb; /* hover:bg-blue-700 */
+}
